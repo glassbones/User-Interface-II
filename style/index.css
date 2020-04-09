@@ -3,7 +3,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,9 +46,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-
-
 
 /* My CSS */
 body{
@@ -99,7 +95,7 @@ button{
     font-weight: 400;
     color: white;
     width: auto;
-    padding-left: 1.2%;
+    margin-left: 1.2%;
 }
 #headr #rightHeadr{
     width: auto;
@@ -176,6 +172,7 @@ h2{
     border-radius: 10px;
     transition: 1000ms;
     margin: auto;
+    margin-top: 5%;
 }
 .btn:hover{
     background-color: rgba(0, 0, 0, 1);
@@ -183,13 +180,14 @@ h2{
     color: white;
 }
 #main{
-    padding: 2% 5%;
+    margin: 5% 5%;
 }
 #main .galleryRow{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin: auto;
 }
 .galleryCell{
     display: flex;
@@ -197,9 +195,6 @@ h2{
     align-items: center;
     width:  auto;
     margin: 0px;
-    padding: 0px;
-    padding-bottom: 1%;
-    padding-top: 1%;
 }
 .galleryCell a{
     display: flex;
@@ -209,6 +204,8 @@ h2{
     color: black;
     transition: 2000ms;
     padding-top: 6%;
+    padding-bottom: auto;
+    margin: 0;
 }
 a .galleryPhoto{
     margin: auto;
@@ -216,23 +213,18 @@ a .galleryPhoto{
     height: 100%;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    transition: 100ms;
+    transition: 1000ms;
 }
 .galleryCell:hover a .galleryPhoto{
-    width: 85%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
-}
-.galleryCell:hover a {
-    padding-left: 13%;
 }
 .galleryCell:hover h2{
     color: white;
     padding-top: 3%;
+    padding-bottom: 3%
 }
+
 #footer{
     display: flex;
     flex-direction: column;
@@ -282,6 +274,10 @@ i{
     .galleryCell h2{
         color: white;
     }
+    .galleryCell h2{
+        padding-top: 3%;
+        padding-bottom: 3%
+    }
 }
 @media (max-width: 740px) {
     #headr{
@@ -325,6 +321,6 @@ i{
         }
         h2{
             font-size: 100%;
-        } 
+        }
     }
 }
